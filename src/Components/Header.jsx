@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Logo from '../assets/img/svgTejas.svg'
 import Nav from './Nav';
 import NavMobile from './NavMobile';
-import Socials from './Social';
+// import Socials from './Social';
 
 const Header = ()=>{
     const [bg, setBg] = useState(false);  
@@ -31,7 +31,7 @@ const Header = ()=>{
 
             {/* Socials */}
             <div className=' hidden lg:block '>
-                <Socials/>
+                {/* <Socials/> */}
             </div>
             {/* NavMobile */}
             <div className='lg:hidden '>

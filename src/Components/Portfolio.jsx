@@ -10,16 +10,11 @@ const Portfolio=()=>{
                 before:absolute
                 before:opacity-60
                 before:-top-[2rem]
-                before:-left-3/4
+                before:-left-[10rem]
                 before:hidden
                 before:lg:block">
                     My latest work
                 </h2>
-                {/* <p className="subtitle">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Voluptas dolor labore hic cum nobis alias perspiciatis 
-                    temporibus molestiae quas? Earum!
-                </p> */}
             </div>
 
             <Projects />

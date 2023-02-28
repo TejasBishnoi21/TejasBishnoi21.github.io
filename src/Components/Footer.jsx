@@ -1,4 +1,4 @@
-import { social } from "../data";
+// import { social } from "../data";
 import Logo from '../assets/img/svgTejas.svg'
 
 const Footer=()=>{
@@ -8,7 +8,7 @@ const Footer=()=>{
             lg:flex-row space-y-6 lg:space-y-0
              items-center justify-between">
                 {/* Social Icons */}
-                <div className="flex space-x-6 
+                {/* <div className="flex space-x-6 
                 items-center justify-center">
                     {social.map((el, index)=>{
                         const {href, icon} = el;
@@ -18,11 +18,11 @@ const Footer=()=>{
                             {icon}
                         </a>
                     })}
-                </div>
+                </div> */}
 
                 {/* Logo SVG */}
-                <div>
-                    <img src={Logo} alt="nameLogo" />
+                <div className="flex justify-center">
+                    <img src={Logo} alt="nameLogo" width={'60%'}/>
                 </div>
 
                 {/*  Copyright  */}

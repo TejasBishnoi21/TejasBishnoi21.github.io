@@ -12,7 +12,7 @@ const NavMobile = ()=>{
     const [isOpen, setIsOpen] = useState(false);
     const openResume = () => {
         window.open(
-          "https://drive.google.com/file/d/10uJHnnfIZK_9STVG-mMtqizP4eTsbBAP/view?usp=sharing"
+          "https://drive.google.com/file/d/10uJHnnfIZK_9STVG-mMtqizP4eTsbBAP/view"
         );
       };
 
@@ -21,10 +21,10 @@ const NavMobile = ()=>{
             scale:0
         },
         visible:{
-            scale:180,
+            scale:200,
             transition:{
                 type: 'spring',
-                stiffness: 160,
+                stiffness: 200,
                 damping: 60,
             },
         },
@@ -42,8 +42,9 @@ const NavMobile = ()=>{
         },
     };
 
-    return <nav className=" relative">
-        <div onClick={()=> setIsOpen(true)} className="cursor-pointer text-white ">
+    return <nav className="relative">
+        <div onClick={()=> setIsOpen(true)} 
+        className="cursor-pointer text-white ">
             <MenuAlt3Icon className=' w-8 h-8'/>
         </div>
 
@@ -55,13 +56,14 @@ const NavMobile = ()=>{
 
         {/* Menu starts from here */}
         <motion.ul variants={ulVariants} initial='hidden'
-        animate={isOpen? 'visible': ''}
+        animate={isOpen? 'visible': 'hidden'}
         className={`${isOpen? 'right-0':'-right-full'}
          fixed top-0 bottom-0 w-full flex flex-col justify-center
           items-center transition-all duration-300 overflow-hidden`}>
             
             {/* Menu Close Icon here */}
-            <div onClick={()=> setIsOpen(false)} className="cursor-pointer absolute top-8 right-8">
+            <div onClick={()=> setIsOpen(false)} 
+            className="cursor-pointer absolute top-8 right-8">
                 <XIcon className="w-8 h-8"/>
             </div>
                 {
@@ -73,7 +75,7 @@ const NavMobile = ()=>{
                             duration={500}
                             offset={-70}
                             onClick={()=> setIsOpen(false)}
-                            className=' text-xl cursor-pointer capitalize'>
+                            className='text-xl cursor-pointer capitalize'>
                                 {item.name}
                             </Link>
                         </li>

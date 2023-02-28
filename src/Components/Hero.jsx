@@ -8,7 +8,7 @@ const Hero = () => {
     
     const openResume = () => {
         window.open(
-          "https://drive.google.com/file/d/10uJHnnfIZK_9STVG-mMtqizP4eTsbBAP/view?usp=sharing"
+          "https://drive.google.com/file/d/10uJHnnfIZK_9STVG-mMtqizP4eTsbBAP/view"
         );
       };
 
