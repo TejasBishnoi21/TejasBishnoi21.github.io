@@ -8,9 +8,9 @@ const Portfolio=()=>{
                 <h2 className="section-title
                 before:content-portfolio relative
                 before:absolute
-                before:opacity-60
+                before:opacity-20
                 before:-top-[2rem]
-                before:-left-[10rem]
+                before:-left-[8.5rem]
                 before:hidden
                 before:lg:block">
                     My latest work

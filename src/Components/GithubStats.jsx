@@ -27,7 +27,7 @@ const GithubStats=()=>{
             </GitHubCalendar>
         </div>
         
-        <div className="container mx-auto bg-tertiary
+        {/* <div className="container mx-auto bg-tertiary
         flex flex-1 h-[20vh] justify-center px-2">
             <div className="flex justify-center">
             <img  
@@ -39,7 +39,7 @@ const GithubStats=()=>{
             src="https://github-readme-streak-stats.herokuapp.com/?user=TejasBishnoi21&show_icons=true&locale=en&theme=tokyonight&hide_border=true&background=131419" 
             alt="TejasBishnoi21"width="95%" /> 
             </div>
-        </div>
+        </div> */}
     </section>
 }
 export default GithubStats;

@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 
 const ContactForm = () => {
@@ -6,7 +7,7 @@ const ContactForm = () => {
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('hello')
 
-    const SubmitFunc=(e)=>{
+    const SubmitFunc= async (e)=>{
         e.preventDefault();
         const data={
             clientName: name,
@@ -14,8 +15,19 @@ const ContactForm = () => {
             subject: subject,
             message:message
         }
-
         console.log(data)
+
+        try{
+          await axios.post("https://portfoliocontactform-869d4-default-rtdb.firebaseio.com/portfolioQueries/portfolioQueries.json", {...data},{
+            headers:{
+              "key":"",
+            }
+          }).then((res)=>{
+            console.log(res)
+          })
+        }catch(err){
+          console.log("some error occured",err)
+        }
 
     }
     

@@ -43,7 +43,7 @@ const Contact = () => {
           <div
             className="flex-col flex-1 lg:flex-col
                 lg:items-start lg:space-y-8 mb-12 justify-center gap-10 
-                lg:mb-0 lg:pt-2 p-1 ">
+                lg:mb-0 lg:pt-2 p-1">
             {contact.map((el, index) => {
               const {
                 icon,
@@ -61,7 +61,7 @@ const Contact = () => {
               return (
                 <div
                   className="flex flex-row 
-                  lg:flex-row gap-x-4">
+                  lg:flex-row gap-x-4 mb-3" key={index}>
                   <div
                     className="text-accent rounded-sm 
                     w-14 h-14 flex items-center lg:items-start 
@@ -78,8 +78,7 @@ const Contact = () => {
                       <Mailto
                         email="tejas.vishnoi@gmail.com"
                         subject=""
-                        body="Hello Tejas!"
-                      >
+                        body="Hello Tejas!">
                         {description}
                       </Mailto>
                     </div>

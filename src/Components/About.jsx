@@ -32,7 +32,7 @@ const About=()=>{
                         I have a background in structural engineering and have recently 
                         made a career change to pursue my passion for web development.
                         <br />
-                        Joined Masai School, a coding boot camp, and completed a 35-week full-time MERN stack web development course 
+                        Joined Masai School, a coding boot camp, and completed the 35-week full-time MERN stack web development course 
                         and got hands-on experience of 1300+ hours of coding.
                         <br />
                         From designing buildings and bridges to amazing websites and web applications, 

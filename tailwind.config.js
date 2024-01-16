@@ -20,7 +20,7 @@ module.exports = {
     extend: {
       content: {
         about: 'url("/src/assets/img/outline-text/about.svg")',
-        portfolio: 'url("/src/assets/img/outline-text/portfolio.svg")',
+        portfolio: 'url("/src/assets/img/outline-text/projects6.svg")',
         contact: 'url("/src/assets/img/outline-text/contact.svg")',
       },
       colors: {
