@@ -15,7 +15,7 @@ const ContactForm = () => {
             subject: subject,
             message:message
         }
-        console.log(data)
+        // console.log(data)
 
         try{
           await axios.post("https://portfoliocontactform-869d4-default-rtdb.firebaseio.com/portfolioQueries/portfolioQueries.json", {...data},{
